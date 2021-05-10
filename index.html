@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&family=Orelega+One&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  width: auto;
+  height: auto;
+  }
+
+.header {
+  padding: 100px 10px 100px 10px;
+  text-align: center;
+  background-image: url('src/images/pinkred.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 40px;
+  /* background: #F75B66; */
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  font-size: 17px;
+}
+li.right {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #253238;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 21px;
+}
+
+li a:hover:not(.active) {
+  color: #FD7F8F;
+}
+li a:hover.active {
+  color: #FD7F8F;
+}
+
+
+.active {
+  color: #F75B66;
+}
+
+h2 {
+  color: white;
+}
+
+h1 {
+  color: #253238;
+  text-align: center;
+  font-size: 42px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  border-radius: 3%;
+  background-color: rgb(255, 255, 255);
+  height: 400px;
+  /* box-shadow:         2px 2px 2px 2px #ccc; */
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit:cover;
+  border-radius: 3%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.responsive:hover {
+  color: #F75B66;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px 12px;
+  float:left;
+  width: 33.33333%;
+  color: #253238;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.footer {
+  background: #253238;
+  bottom: 0;
+  width: 100%;
+  height: 140px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 19px;
+  text-align: center;
+  padding: 1px 0 0 0;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Gabriel Sichelero</a></li>
+  <li><a class="left" href="#projects">Projetos</a></li>
+  <!-- <li><a class="left" href="#home">Work Experience</a></li>
+  <li><a class="left" href="#home">Academic Experience</a></li> -->
+  <li class="right"><a href="https://github.com/GSichelero" target="_blank">GitHub</a></li>
+  <li class="right"><a href="https://www.linkedin.com/in/gabriel-sichelero/" target="_blank">LinkedIn</a></li>
+  <li class="right"><a href="https://gsichelero.github.io/Web-Design-Resume/" target="_blank">Currículo</a></li>
+</ul>
+
+  <div class="header" id="home">
+    <h2>Seja bem-vindo</h2>
+    <p>Me chamo <b>Gabriel Sichelero</b>,
+      sou <b>Desenvolvedor de Software</b>
+      e estudante de <b>Sistemas para Internet</b>, 
+      neste portfólio estão alguns dos meus projetos de programação 
+    </p>
+  </div>
+
+  <h1 id="projects">Projetos</h1>
+
+<div style="overflow:hidden;">
+
+<a target="_blank" href="https://github.com/GSichelero/Harvard-CS50">
+<div  class="responsive">
+  <div class="gallery">
+      <img src="src/images/harvard-cs50.jpeg" width="600" height="400">
+    <div class="desc">Projetos desenvolvidos durante o curso online CS50</div>
+  </div>
+</div >
+</a>
+
+<a target="_blank" href="https://github.com/GSichelero/House_Prices">
+<div class="responsive">
+  <div class="gallery">
+      <img src="src/images/houses.png" width="600" height="400">
+    <div class="desc">House Prices - Advanced Regression Techniques (Kaggle Competition)</div>
+  </div>
+</div>
+</a>
+
+<a target="_blank" href="https://github.com/GSichelero/Harvard-CS50">
+<div class="responsive">
+  <div class="gallery">
+      <img src="src/images/c-language.png" width="600" height="400">
+    <div class="desc">Projetos desenvolvidos em C</div>
+  </div>
+</div>
+</a>
+
+<a target="_blank" href="https://github.com/GSichelero/Harvard-CS50">
+<div class="responsive">
+  <div class="gallery">
+      <img src="src/images/sqlite.png" width="600" height="400">
+    <div class="desc">Projetos desenvolvidos com SQL</div>
+  </div>
+</div>
+</a>
+
+<a target="_blank" href="https://github.com/GSichelero/nlp_news">
+<div class="responsive">
+  <div class="gallery">
+      <img src="src/images/scikit.png" width="600" height="400">
+    <div class="desc">Modelo classificatório de notícias em linhas de negócio (NLP)</div>
+  </div>
+</div>
+</a>
+
+<a target="_blank" href="https://github.com/GSichelero/titanic">
+<div class="responsive">
+  <div class="gallery">
+      <img src="src/images/titanic.jpg" width="600" height="400">
+    <div class="desc">Titanic - Machine Learning from Disaster (Kaggle Competition)</div>
+  </div>
+</div>
+</a>
+
+</div>
+
+<div class="footer" style="margin-top:90px;">
+    <h2>Contato</h2>
+    <p style="color:#F75B66;">gabriel.sichelero@hotmail.com</p>
+</div>
+
+</body>
+
+</html>
